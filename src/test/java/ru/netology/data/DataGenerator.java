@@ -1,18 +1,11 @@
 package ru.netology.data;
 
-import lombok.Data;
-import lombok.experimental.UtilityClass;
 import com.github.javafaker.Faker;
-
 import java.util.Locale;
-
 import lombok.Value;
-import lombok.val;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-@Data
 public class DataGenerator {
     private DataGenerator() {
     }
@@ -54,7 +47,6 @@ public class DataGenerator {
 
         }
     }
-
 
     @Value
     public static class UserInfo {

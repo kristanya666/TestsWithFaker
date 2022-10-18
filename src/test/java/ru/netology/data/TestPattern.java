@@ -63,7 +63,7 @@ class DeliveryTest {
         //подтверждение перепланирования доставки
         SelenideElement notificationSecond = $("[data-test-id=replan-notification]");
         $(withText("Необходимо подтверждение")).shouldBe(Condition.visible, Duration.ofSeconds(15));
-        $(byXpath("//*[@id=\"root\"]/div/div[2]/div[3]/button")).click();
+        $(withText("Перепланировать")).click();
 
         //проверка уведомления о перезапланированной доставке
         $(withText("Успешно!")).shouldBe(Condition.visible, Duration.ofSeconds(15));
